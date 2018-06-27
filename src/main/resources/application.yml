@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+    datasource:
+        name: test
+        url: jdbc:mysql://10.0.0.99:3306/test?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+        driver-class-name: com.mysql.jdbc.Driver
+        username: root
+        password: 123456
+    mvc:
+      favicon:
+        enabled: false
+      view:
+        prefix: /WEB-INF/
+        suffix: .jsp
+mybatis:
+    mapper-locations: classpath:mappers/*.xml
+    configuration:
+      map-underscore-to-camel-case: true
+
+app:
+    name: aaaaa
